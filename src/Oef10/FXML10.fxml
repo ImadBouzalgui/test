@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="561.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Oef10.FXML10Controller">
+   <children>
+      <CheckBox fx:id="chkOmtrek" layoutX="33.0" layoutY="68.0" mnemonicParsing="false" text="Omtrek" />
+      <CheckBox fx:id="chkOpp" layoutX="33.0" layoutY="109.0" mnemonicParsing="false" text="Oppervlakte" />
+      <ComboBox fx:id="cmbFiguur" layoutX="269.0" layoutY="63.0" onAction="#KeuzeVorm" prefWidth="150.0" />
+      <Button fx:id="btnBerekenen" layoutX="269.0" layoutY="120.0" mnemonicParsing="false" onMouseClicked="#Clicked_Berekenen" text="Berekenen" />
+      <Pane fx:id="pnlPanel" layoutX="42.0" layoutY="179.0" prefHeight="200.0" prefWidth="327.0">
+         <children>
+            <Label fx:id="lblWaarde1" layoutX="14.0" layoutY="31.0" text="Label" />
+            <Label fx:id="lblWaarde2" layoutX="14.0" layoutY="66.0" text="Label" visible="false" />
+            <Label fx:id="lblWaarde3" layoutX="14.0" layoutY="100.0" text="Label" visible="false" />
+            <TextField fx:id="txtWaarde1" layoutX="149.0" layoutY="26.0" prefHeight="31.0" prefWidth="123.0" />
+            <TextField fx:id="txtWaarde2" layoutX="149.0" layoutY="61.0" prefHeight="31.0" prefWidth="123.0" visible="false" />
+            <TextField fx:id="txtWaarde3" layoutX="149.0" layoutY="95.0" prefHeight="31.0" prefWidth="123.0" visible="false" />
+         </children>
+      </Pane>
+      <TextArea fx:id="txtResultaat" layoutX="42.0" layoutY="347.0" prefHeight="200.0" prefWidth="463.0" />
+   </children>
+</AnchorPane>

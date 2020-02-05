@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML1Controller">
+   <children>
+      <TextField fx:id="txtLengte" layoutX="172.0" layoutY="78.0" />
+      <Label layoutX="75.0" layoutY="82.0" text="lengte" />
+      <Button fx:id="btnBerekenen" layoutX="263.0" layoutY="230.0" mnemonicParsing="false" onMouseClicked="#Clicked_berekenen" text="bereken" />
+      <Label fx:id="lblResultaat" layoutX="71.0" layoutY="139.0" text="breedte" />
+      <Label layoutX="78.0" layoutY="183.0" text="hoogte" />
+      <TextField fx:id="txtBreedte" layoutX="172.0" layoutY="135.0" />
+      <TextField fx:id="txtHoogte" layoutX="172.0" layoutY="179.0" />
+      <TextArea fx:id="txtuitkomst" layoutX="365.0" layoutY="183.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
